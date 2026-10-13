@@ -17,7 +17,7 @@ ulimit -n 16384
 # Add your node IDs and IPs here in format: node-id@ip:26656
 # ============================================
 PEERS=(
-   "378d6752f739ff10088a49361d07bcc07174c500@10.31.3.76/:26656"
+   "378d6752f739ff10088a49361d07bcc07174c500@10.31.3.76:26656"
   #  "@:26656"
   #  "@:26656"
   #  "@:26656"
@@ -92,8 +92,8 @@ KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
 
 # Set dedicated home directory for the blockmazed instance
-#  HOMEDIR="/data/.tmp-blockmazed"
- HOMEDIR="$HOME/.tmp-blockmazed"
+  HOMEDIR="/data/.tmp-blockmazed"
+ #HOMEDIR="$HOME/.tmp-blockmazed"
 
 
 # Check if the service is running

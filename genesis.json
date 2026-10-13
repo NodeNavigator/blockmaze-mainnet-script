@@ -1,8 +1,4 @@
 {
-  "jsonrpc": "2.0",
-  "id": -1,
-  "result": {
-    "genesis": {
       "genesis_time": "2026-10-13T13:47:29.087204745Z",
       "chain_id": "blockmaze_6165-1",
       "initial_height": "1",
@@ -1178,5 +1174,3 @@
         }
       }
     }
-  }
-}

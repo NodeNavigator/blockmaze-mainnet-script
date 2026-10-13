@@ -165,7 +165,7 @@ fi
     sed -i 's/experimental_websocket_write_buffer_size = 200/experimental_websocket_write_buffer_size = 600/' "$CONFIG"
     sed -i 's/prometheus-retention-time  = "0"/prometheus-retention-time  = "1000000000000"/g' "$APP_TOML"
     sed -i 's/enabled = false/enabled = true/g' "$APP_TOML"
-    sed -i 's/minimum-gas-prices = "0rho18"/minimum-gas-prices = "0.0000015rho18"/g' "$APP_TOML"
+    sed -i 's/minimum-gas-prices = "0Rho18"/minimum-gas-prices = "0.0000015Rho18"/g' "$APP_TOML"
     sed -i 's/enable = false/enable = true/g' "$APP_TOML"
     sed -i 's/swagger = false/swagger = true/g' "$APP_TOML"
     sed -i 's/enabled-unsafe-cors = false/enabled-unsafe-cors = true/g' "$APP_TOML"

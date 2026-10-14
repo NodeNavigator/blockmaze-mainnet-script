@@ -1,5 +1,9 @@
 {
-      "genesis_time": "2026-10-13T13:47:29.087204745Z",
+  "jsonrpc": "2.0",
+  "id": -1,
+  "result": {
+    "genesis": {
+      "genesis_time": "2026-10-14T12:44:44.050121071Z",
       "chain_id": "blockmaze_6165-1",
       "initial_height": "1",
       "consensus_params": {
@@ -758,7 +762,8 @@
         "deployer": {
           "params": {
             "deployer_access": [
-              "0x2279c60f81C49d71CC55bB7aB526C84550A26f04"
+              "0x2279c60f81C49d71CC55bB7aB526C84550A26f04",
+              "0xF6Ae00069aa61CDC13d38F5FE64e25D647bEbB6D"
             ]
           },
           "deployer_list": [],
@@ -910,7 +915,7 @@
                     "validator_address": "bmzvaloper1tw5tpafapktpqdlvjllsculh4ptc0fjl0m2gr3",
                     "pubkey": {
                       "@type": "/cosmos.crypto.ed25519.PubKey",
-                      "key": "XqDPjmAEmGvQgwWWGF71VUaVpMFNIS/NukBI4sRmdHQ="
+                      "key": "1f914R11VFdCVWwjlCbEZtwePaOrIcdBnSZBtDwc0cg="
                     },
                     "value": {
                       "denom": "Rho18",
@@ -918,7 +923,7 @@
                     }
                   }
                 ],
-                "memo": "378d6752f739ff10088a49361d07bcc07174c500@63.178.78.69:26656",
+                "memo": "2099514b2e8b2756b3e5ee5cb393c0d89e79ec53@63.178.78.69:26656",
                 "timeout_height": "0",
                 "unordered": false,
                 "timeout_timestamp": null,
@@ -954,7 +959,7 @@
                 "tip": null
               },
               "signatures": [
-                "KQnWjd36ts493Y/PVzz2Ne39j92PhvUz9CBBi01qwGNLZzEEM7Smj77HuuEnfbcqAbItpDFlKDdHi0jjqIc3Lhw="
+                "NFPOtCz/6SGkCjjqipZaEBq6sVJiPntRTL+gKwhVARYp/lhZY0hbP8kVu2EG3t0lQdBJF9fj5rezP75urkcFaRs="
               ]
             }
           ]
@@ -970,10 +975,10 @@
                 "denom": "Rho18"
               }
             ],
-            "max_deposit_period": "604800s"
+            "max_deposit_period": "86400s"
           },
           "voting_params": {
-            "voting_period": "604800s"
+            "voting_period": "86400s"
           },
           "tally_params": null,
           "params": {
@@ -983,8 +988,8 @@
                 "amount": "50000000000000000000000"
               }
             ],
-            "max_deposit_period": "604800s",
-            "voting_period": "604800s",
+            "max_deposit_period": "86400s",
+            "voting_period": "86400s",
             "quorum": "0.400000000000000000",
             "threshold": "0.500000000000000000",
             "veto_threshold": "0.334000000000000000",
@@ -1174,3 +1179,5 @@
         }
       }
     }
+  }
+}

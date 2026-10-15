@@ -17,10 +17,9 @@ ulimit -n 16384
 # Add your node IDs and IPs here in format: node-id@ip:26656
 # ============================================
 PEERS=(
-   "378d6752f739ff10088a49361d07bcc07174c500@10.31.3.76:26656"
-   "d62c2c80737ce66deaf45cd4f16c6deb9248d5d8@10.33.7.230:26656"
-  #  "@:26656"
-  #  "@:26656"
+   "97efbfbf81b0f31e2833cdd4bc42e9817fcbcff6@18.156.105.47:26656"
+   "d62c2c80737ce66deaf45cd4f16c6deb9248d5d8@13.206.25.204:26656"
+   "47ecf0cba6844d634881cc3d2404936ce1a57689@3.111.123.210:26656"
 )
 # Join array elements with comma separator
 PERSISTENT_PEERS=$(IFS=,; echo "${PEERS[*]}")

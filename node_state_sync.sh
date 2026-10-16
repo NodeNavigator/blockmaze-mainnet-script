@@ -17,10 +17,9 @@ ulimit -n 16384
 # Add your node IDs and IPs here in format: node-id@ip:26656
 # ============================================
 PEERS=(
-   "@:26656"
-   "@:26656"
-   "@:26656"
-   "@:26656"
+   "97efbfbf81b0f31e2833cdd4bc42e9817fcbcff6@18.156.105.47:26656"
+   "d62c2c80737ce66deaf45cd4f16c6deb9248d5d8@13.206.25.204:26656"
+   "47ecf0cba6844d634881cc3d2404936ce1a57689@3.111.123.210:26656"
 )
 # Join array elements with comma separator
 PERSISTENT_PEERS=$(IFS=,; echo "${PEERS[*]}")
@@ -189,10 +188,8 @@ fi
 
     #========================= STATE SYNC CONFIGURATION =========================
 	# Configure state sync with dynamic trust values
-	# STATE_SYNC_RPC_SERVERS="https:\/\/testnet-tendermint.blockmaze.com,https:\/\/testnet-tendermint-arc.blockmaze.com,https:\/\/testnet-tendermint-in.blockmaze.com"
-	# API_BASE="https://testnet-bm-api.blockmaze.com"
-	STATE_SYNC_RPC_SERVERS=""
-	API_BASE=""
+	STATE_SYNC_RPC_SERVERS="https:\/\/native-rpc.blockmaze.org,http:\/\/3.111.123.210:26657,http:\/\/13.206.25.204:26657"
+	API_BASE="https://api.blockmaze.org"
     
 	echo "Fetching latest block height from $API_BASE..."
 	latest_height=$(curl -s "$API_BASE/cosmos/base/tendermint/v1beta1/blocks/latest" | jq -r '.block.header.height')
